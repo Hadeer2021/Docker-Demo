@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  ml-app:
+    build: .
+    container_name: ml_docker_app
+    restart: always
+    volumes:
+      - .:/usr/src/app
+      - ./model:/usr/src/app/model
+    command: python train_model.py
