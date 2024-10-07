@@ -14,9 +14,9 @@ How to Build and Run the Application
 3. Build and run the container:
    docker-compose up --build
 or it could be:
-3. Build the Docker image:
+4. Build the Docker image:
    docker build -t ml-docker-app .
-4. Run the container:
+5. Run the container:
    docker run --rm -v $(pwd):/usr/src/app ml-docker-app
 
 Files in the Repository:
